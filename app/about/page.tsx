@@ -1,12 +1,6 @@
 "use client"
 
 import Image from 'next/image';
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Mariana M. - About',
-  description: 'About',
-}
 
   export default function Home() {
     return (

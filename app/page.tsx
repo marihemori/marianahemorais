@@ -1,12 +1,6 @@
 "use client"
 
 import styled from 'styled-components'
-import { Metadata } from 'next'
-
-export const metadata: Metadata = {
-  title: 'Mariana M.',
-  description: 'Mariana porfolio',
-}
 
 
 const CardResume = styled.div`
