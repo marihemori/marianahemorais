@@ -13,10 +13,10 @@ interface ParticlesProps {
 
 export default function Particles({
 	className = "",
-	quantity = 30,
-	staticity = 50,
-	ease = 50,
-	refresh = false,
+	quantity = 500,
+	staticity = 500,
+	ease = 10,
+	refresh = true,
 }: ParticlesProps) {
 	const canvasRef = useRef<HTMLCanvasElement>(null);
 	const canvasContainerRef = useRef<HTMLDivElement>(null);

@@ -4,6 +4,13 @@ import Particles from './components/particles/Particles';
 import './globals.css'
 import { Space_Grotesk } from 'next/font/google'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mariana M.',
+  description: "Mariana's portfolio",
+}
+
 const space = Space_Grotesk({
   weight: ['300', '400', '500', '600'],
   subsets: ['latin']

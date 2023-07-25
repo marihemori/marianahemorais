@@ -19,14 +19,15 @@ const CardResume = styled.div`
 
 export default function Home() {
   return (
-    <main>
-      <CardResume>
-          <p>Hi there 👋</p>
-          <p>I&apos;m a <span>Front End</span> developer, based in Brazil.</p>
-      </CardResume>
-      <div>
-          <p>Here are my current posts:</p>
-      </div>
-    </main>
+    <>
+      <main>
+        <p>Hi there 👋</p>
+        <p>I&apos;m a <span>Front End</span> developer, based in Brazil.</p>
+        <hr className='mt-2 mb-6'/>
+        <div>
+            <p>Here are my current posts:</p>
+        </div>
+      </main>
+    </>
   )
 }

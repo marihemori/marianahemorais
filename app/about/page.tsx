@@ -12,17 +12,16 @@ import Image from 'next/image';
     return (
       <main>
         <div className='text-center mb-10'>
-          <h1 className='font-medium text-lg'>About me 📜</h1>
+          <h1 className='font-medium text-lg'>About me</h1>
         </div>
         <section className='flex justify-between'>
           <div>
             <p>I work with website development, and I study technologies to build beautiful and well-structured applications.</p>
             <p className='mt-6 mb-2'>Some technologies I’m learning: </p>
             <ul className='list-disc ml-4'>
-              <li>Next.js</li>
+              <li>Nuxt.js</li>
               <li>Vue.js</li>
               <li>React.js</li>
-              <li>Next.js</li>
               <li>JS</li>
               <li>Typescript</li>
               <li>Python</li>
@@ -37,9 +36,9 @@ import Image from 'next/image';
           </div>
           <div>
             <Image
-              src="/images/image.png"
-              width={300}
-              height={300}
+              src="/images/dith.png"
+              width={400}
+              height={400}
               alt="Picture of the author"
             />
           </div>
