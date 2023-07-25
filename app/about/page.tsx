@@ -1,12 +1,12 @@
 "use client"
 
-export const metadata = {
-    title: 'Mariana M. - About',
-    description: 'About me',
-}
-
-import styled from 'styled-components'
 import Image from 'next/image';
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Mariana M. - About',
+  description: 'About',
+}
 
   export default function Home() {
     return (
