@@ -39,7 +39,7 @@ import Image from 'next/image';
               src="/images/dith.png"
               width={400}
               height={400}
-              alt="Picture of the author"
+              alt="Picture"
             />
           </div>
         </section>
