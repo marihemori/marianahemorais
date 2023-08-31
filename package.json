@@ -3,12 +3,10 @@
   "version": "2.0.1",
   "private": true,
   "scripts": {
-    "start": "next dev",
     "dev": "next dev",
-    "build": "next build && cross-env NODE_OPTIONS='--experimental-json-modules' node ./scripts/postbuild.mjs",
-    "serve": "next start",
-    "analyze": "cross-env ANALYZE=true next build",
-    "lint": "next lint --fix --dir pages --dir app --dir components --dir lib --dir layouts --dir scripts"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@next/bundle-analyzer": "13.4.19",
