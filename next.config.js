@@ -2,7 +2,7 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  output: 'static',
+  output: 'export',
   dir: 'out',
 }
 
