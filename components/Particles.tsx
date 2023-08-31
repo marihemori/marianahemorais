@@ -39,14 +39,17 @@ export default function Particles({
     return () => {
       window.removeEventListener('resize', initCanvas)
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   useEffect(() => {
     onMouseMove()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mousePosition.x, mousePosition.y])
 
   useEffect(() => {
     initCanvas()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refresh])
 
   const initCanvas = () => {
