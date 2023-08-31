@@ -3,6 +3,7 @@
  */
 const nextConfig = {
   output: 'export',
+  dir: 'out',
 }
 
 module.exports = nextConfig
