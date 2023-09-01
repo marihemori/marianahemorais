@@ -1,13 +1,27 @@
 /**
- * @type {import('next').NextConfig}
- */
+ * @type {import('next/dist/next-server/server/config').NextConfig}
+ **/
+const nextConfig = {
+  output: 'export',
+  dir: 'out',
 
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    })
+
+    return config
+  },
+}
 
 const { withContentlayer } = require('next-contentlayer')
 
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })
+
+const plugins = [withContentlayer, withBundleAnalyzer]
 
 // You might need to insert additional domains in script-src if you are using external services
 const ContentSecurityPolicy = `
@@ -59,27 +73,9 @@ const securityHeaders = [
   },
 ]
 
-/**
- * @type {import('next/dist/next-server/server/config').NextConfig}
- **/
-const nextConfig = {
-  output: 'export',
-  dir: 'out',
-
-  webpack: (config, options) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    })
-
-    return config
-  },
-}
-
 module.exports = () => {
-  nextConfig
-  const plugins = [withContentlayer, withBundleAnalyzer]
   return plugins.reduce((acc, next) => next(acc), {
+    ...nextConfig,
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {
@@ -99,5 +95,6 @@ module.exports = () => {
         },
       ]
     },
+
   })
 }
