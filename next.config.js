@@ -2,9 +2,6 @@
  * @type {import('next/dist/next-server/server/config').NextConfig}
  **/
 const nextConfig = {
-  output: 'export',
-  dir: 'out',
-
   webpack: (config, options) => {
     config.module.rules.push({
       test: /\.svg$/,
