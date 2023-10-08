@@ -1,46 +1,56 @@
-import siteMetadata from '@/data/siteMetadata'
-import headerNavLinks from '@/data/headerNavLinks'
-import Link from './Link'
-import MobileNav from './MobileNav'
-import ThemeSwitch from './ThemeSwitch'
-import SearchButton from './SearchButton'
+"use client";
 
-const Header = () => {
+import React, { useState } from "react";
+import {
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Button,
+} from "@nextui-org/react";
+import { HiDownload } from "react-icons/hi";
+import Link from "next/link";
+
+export default function Header() {
   return (
-    <header className="py-10">
-      <nav className="flex flex-row justify-between items-center">
-        <div>
-          <Link href="/" aria-label={siteMetadata.headerTitle}>
-            <div className="flex items-center justify-between">
-              {typeof siteMetadata.headerTitle === 'string' ? (
-                <div className="hidden h-6 text-2xl font-semibold sm:block">
-                  {siteMetadata.headerTitle}
-                </div>
-              ) : (
-                siteMetadata.headerTitle
-              )}
-            </div>
-          </Link>
-        </div>
-        <div className="flex items-center leading-5 space-x-4 sm:space-x-6">
-          {headerNavLinks.map((link) => (
-            <Link
-              key={link.title}
-              href={link.href}
-              className="hidden sm:block font-medium text-gray-900 dark:text-gray-100"
+    <header className="mb-[2rem] z-50 flex items-center justify-between mt-6">
+      <div>
+        <h1 className="text-zinc-800 text-2xl font-semibold">
+          <Link href="/">Mariana.</Link>
+        </h1>
+      </div>
+      <div className="bg-white text-black rounded-full">
+        <Dropdown className="bg-white text-black">
+          <DropdownTrigger>
+            <Button
+              variant="bordered"
+              className="flex items-center gap-2 px-3 py-1 font-medium text-zinc-700 hover:text-black transition"
             >
-              {link.title}
-            </Link>
-          ))}
-        </div>
-        <div className="flex gap-3">
-          <SearchButton />
-          <ThemeSwitch />
-          <MobileNav />
-        </div>
-      </nav>
+              Download CV <HiDownload />
+            </Button>
+          </DropdownTrigger>
+          <DropdownMenu aria-label="Static Actions" className="rounded">
+            <DropdownItem key="new">
+              <a
+                href="/pdf/resume.pdf"
+                download
+                className="flex items-center gap-2"
+              >
+                Download EN-US <HiDownload />
+              </a>
+            </DropdownItem>
+            <DropdownItem key="download">
+              <a
+                className="flex items-center gap-2"
+                href="/pdf/curriculo.pdf"
+                download
+              >
+                Download PT-BR <HiDownload />
+              </a>
+            </DropdownItem>
+          </DropdownMenu>
+        </Dropdown>
+      </div>
     </header>
-  )
+  );
 }
-
-export default Header
