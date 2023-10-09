@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     remotePatterns: [],
   },
+  output: "export",
 };
 
 module.exports = nextConfig;
