@@ -12,7 +12,7 @@ export default function Nav() {
     useActiveSectionContext();
 
   return (
-    <div className="relative">
+    <div className="relative hidden md:block z-50">
       <motion.div
         className="
             flex
@@ -23,18 +23,16 @@ export default function Nav() {
             left-[2rem]
             h-[3.5rem]
             w-full
-            border
             rounded-full
-            border-white
-            border-opacity-40
+            border-opacity-50
             bg-white
-            bg-opacity-100
+            bg-opacity-40
             shadow-lg
             shadow-white/[0.03]
             backdrop-blur-[0.5rem]
-            sm:w-[2.8rem]
-            sm:h-[18rem]
-            sm:top-[20rem]
+            sm:w-[3rem]
+            sm:h-[19.5rem]
+            sm:top-[18.5rem]
         "
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -44,16 +42,16 @@ export default function Nav() {
         <ul className="flex flex-row sm:flex-col w-fit">
           {links.map((link) => (
             <motion.li
-              className="text-xl relative"
+              className="text-2xl relative"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
                 className={clsx(
-                  "flex flex-row items-center justify-start px-3 py-3 text-zinc-400 hover:text-gray-800 transition w-fit",
+                  "flex flex-row items-center justify-start px-3 py-3 text-zinc-700 hover:text-zinc-800 transition w-fit",
                   {
-                    "text-gray-950": activeSection === link.name,
+                    "text-zinc-700": activeSection === link.name,
                   }
                 )}
                 href={link.hash}
@@ -65,7 +63,7 @@ export default function Nav() {
                 {link.icon}
 
                 {link.name === activeSection && (
-                  <span className="bg-gray-100 rounded-full absolute inset-0 -z-10 "></span>
+                  <span className="bg-white/90 rounded-full absolute inset-0 -z-10 "></span>
                 )}
               </Link>
             </motion.li>

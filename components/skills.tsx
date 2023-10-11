@@ -24,15 +24,15 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.5);
 
   return (
-    <motion.section
-      ref={ref}
-      className="mb-28 scroll-mt-28 text-center sm:mb-40 max-w-[80rem] self-center"
-    >
+    <motion.section ref={ref} className="scroll-mt-28 mt-8">
       <SectionHeading>My skills</SectionHeading>
+      <p className="mb-10 text-2xl">
+        My skills that I got from working with them or studying.
+      </p>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full text-white0 cursor-pointer"
+            className="bg-zinc-800 px-5 py-1 tracking-wider rounded-full text-white cursor-pointer backdrop-blur-[0.5rem] bg-opacity-90 text-center"
             key={index}
             variants={fadeInAnimationsVariants}
             initial="initial"
