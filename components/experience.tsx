@@ -36,11 +36,11 @@ export default function experience() {
                 boxShadow: "none",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700">
-                {item.description}
+              <h3 className="font-semibold capitalize text-xl">{item.title}</h3>
+              <p className="font-normal !text-lg text-gray-700 !mt-0">
+                {item.location}
               </p>
+              <p className="!mt-1 !font-normal !text-lg">{item.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

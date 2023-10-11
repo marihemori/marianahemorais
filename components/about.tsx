@@ -25,11 +25,11 @@ export default function About() {
             src="/images/ego.png"
             className="w-[20rem] xl:w-[40rem] mb-8"
             alt="Mariana"
-            width={900}
-            height={900}
-            quality={95}
+            width={700}
+            height={700}
+            quality={100}
           />
-          <motion.span
+          {/* <motion.span
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
@@ -38,10 +38,10 @@ export default function About() {
               delay: 0.1,
               duration: 0.7,
             }}
-            className="text-4xl absolute bottom-[2rem]"
+            className="text-5xl absolute top-[26rem]"
           >
             👋
-          </motion.span>
+          </motion.span> */}
         </div>
         <div className="text-left xl:text-right xl:w-[64rem]">
           <p className="mb-3 text-2xl">
@@ -53,7 +53,7 @@ export default function About() {
               Systems Analysis and Development{" "}
             </span>
             when I finished high school and since then I have been interested in
-            learning new things.
+            to work with it and learn new things
           </p>
           <p className="text-2xl mb-3">
             I really like things related to{" "}
@@ -67,8 +67,8 @@ export default function About() {
           </p>
           <p className="mb-3 text-2xl">
             My main stack are{" "}
-            <span className="font-medium">Vue.js, Nuxt.js and React</span>. I've
-            also worked with{" "}
+            <span className="font-medium">Vue.js, Nuxt.js and React</span> and
+            I've also worked with{" "}
             <span className="font-medium">Angular and DjangoCMS</span>. On the{" "}
             Back-End side, I have some experience with
             <span className="font-medium">Node.js</span>.

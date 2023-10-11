@@ -24,7 +24,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills", 0.5);
 
   return (
-    <motion.section ref={ref} className="scroll-mt-28 mt-8">
+    <motion.section ref={ref} className="scroll-mt-28 mt-8" id="skills">
       <SectionHeading>My skills</SectionHeading>
       <p className="mb-10 text-2xl">
         My skills that I got from working with them or studying.
