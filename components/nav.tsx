@@ -32,13 +32,13 @@ export default function Nav() {
             backdrop-blur-[0.5rem]
             sm:w-[3rem]
             sm:h-[23rem]
-            sm:top-[21rem]
+            sm:top-[18rem]
         "
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
       ></motion.div>
 
-      <nav className="fixed top-[0.15rem] right-[2rem] h-12 p-y sm:py-0 flex w-fit justify-center sm:h-[100vh] sm:flex sm:flex-col sm:justify-center ">
+      <nav className="fixed top-[0.15rem] right-[2rem] h-12 p-y sm:py-0 flex w-fit justify-center sm:h-[100vh] sm:flex sm:flex-col sm:justify-center">
         <ul className="flex flex-row sm:flex-col w-fit">
           {links.map((link) => (
             <motion.li

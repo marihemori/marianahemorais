@@ -13,9 +13,11 @@ import {
   BsLinkedin,
 } from "react-icons/bs";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Hero() {
   const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section ref={ref} id="home" className="xl:mt-28 mb-10 mt-8">
@@ -47,9 +49,16 @@ export default function Hero() {
               bottom: 50,
             }}
           >
-            <a href="#contact" className="cursor-pointer">
+            <Link
+              href="#contact"
+              className="cursor-pointer"
+              onClick={() => {
+                setActiveSection("Contact");
+                setTimeOfLastClick(Date.now());
+              }}
+            >
               Contact me ✉️
-            </a>
+            </Link>
           </motion.div>
           <motion.div
             className="bg-white text-zinc-800 hover:text-gray-800 px-8 py-6 h-fit flex place-content-center gap-2 rounded-xl text-4xl active:scale-105 transition cursor-grab bg-opacity-60 hover:bg-opacity-95

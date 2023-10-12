@@ -70,7 +70,7 @@ export default function About() {
             <span className="font-medium">Vue.js, Nuxt.js and React</span> and
             I've also worked with{" "}
             <span className="font-medium">Angular and DjangoCMS</span>. On the{" "}
-            Back-End side, I have some experience with
+            Back-End side, I have some experience with{" "}
             <span className="font-medium">Node.js</span>.
           </p>
           <p className="mb-3 text-2xl">

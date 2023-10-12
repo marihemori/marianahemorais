@@ -52,7 +52,9 @@ main {
   top: 0;
   left: 0;
   right: 0;
-  height: 10px;
+  height: 5px;
+  border: 1px solid white;
+  border-radius: 10px;
   background: white;
   transform-origin: 0%;
 }

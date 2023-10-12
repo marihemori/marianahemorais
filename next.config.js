@@ -4,6 +4,9 @@ const nextConfig = {
     remotePatterns: [],
   },
   // output: "export",
+  experimental: {
+    serverActions: true,
+  },
 };
 
 module.exports = nextConfig;

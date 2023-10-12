@@ -43,7 +43,7 @@ export const links = [
   },
   {
     name: "Works",
-    hash: "#work-projects",
+    hash: "#works",
     icon: React.createElement(LuBriefcase),
   },
   {
