@@ -20,7 +20,7 @@ export default function experience() {
       ref={ref}
     >
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline lineColor="">
+      <VerticalTimeline className="text-white">
         {experiencesData.map((item, index) => (
           <React.Fragment key={index}>
             <VerticalTimelineElement
@@ -41,13 +41,18 @@ export default function experience() {
                 background: "white",
                 fontSize: "5rem",
                 boxShadow: "none",
+                color: "#000000",
               }}
             >
-              <h3 className="font-semibold capitalize text-xl">{item.title}</h3>
+              <h3 className="font-semibold capitalize text-xl text-gray-700">
+                {item.title}
+              </h3>
               <p className="font-normal !text-lg text-gray-700 !mt-0">
                 {item.location}
               </p>
-              <p className="!mt-1 !font-normal !text-lg">{item.description}</p>
+              <p className="!mt-1 !font-normal !text-lg text-gray-700">
+                {item.description}
+              </p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}

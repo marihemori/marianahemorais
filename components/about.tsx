@@ -29,21 +29,8 @@ export default function About() {
             height={700}
             quality={100}
           />
-          {/* <motion.span
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-            className="text-5xl absolute top-[26rem]"
-          >
-            👋
-          </motion.span> */}
         </div>
-        <div className="text-left xl:text-right xl:w-[64rem]">
+        <div className="text-left xl:text-right xl:w-[64rem] text-white">
           <p className="mb-3 text-2xl">
             I've been into computer stuff for a long time taking basic computer
             courses and technical course that I had in the community but at home

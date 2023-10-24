@@ -9,6 +9,7 @@ import {
   LuAtSign,
   LuShapes,
 } from "react-icons/lu";
+import { BsBoxes } from "react-icons/bs";
 
 import { PiPathBold } from "react-icons/pi";
 // Works
@@ -18,6 +19,7 @@ import acquaImg from "@/public/images/works/acquamotion.png";
 import profuseImg from "@/public/images/works/profuse.png";
 import ritmoneuranImg from "@/public/images/works/ritmoneuran.png";
 
+import owngreenImg from "@/public/images/projects/owngreen.png";
 import woodnisImg from "@/public/images/projects/woodnis.png";
 
 export const links = [
@@ -39,22 +41,17 @@ export const links = [
   {
     name: "Experience",
     hash: "#experience",
-    icon: React.createElement(PiPathBold),
+    icon: React.createElement(LuBriefcase),
   },
   {
     name: "Works",
     hash: "#works",
-    icon: React.createElement(LuBriefcase),
+    icon: React.createElement(BsBoxes),
   },
   {
     name: "Projects",
     hash: "#projects",
     icon: React.createElement(LuFolders),
-  },
-  {
-    name: "Contact",
-    hash: "#contact",
-    icon: React.createElement(LuAtSign),
   },
 ] as const;
 
@@ -114,6 +111,13 @@ export const worksData = [
 ] as const;
 
 export const projectsData = [
+  {
+    title: "Owngreen",
+    description: "A website that sells gardening stuff.",
+    tags: ["React", "Tailwind", "Strapi", "Stripe"],
+    imageUrl: owngreenImg,
+    url: "https://owngreen.vercel.app/",
+  },
   {
     title: "Woodnis",
     description:

@@ -22,8 +22,8 @@ export default function Home() {
       <Works />
       <SectionDivider />
       <Projects />
-      <SectionDivider />
-      <Contact />
+      {/* <SectionDivider /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

@@ -10,9 +10,9 @@
 
 html {
   height: 100%;
-  background: linear-gradient(90deg, #dde1c2, #b094c5);
+  background: linear-gradient(90deg, #141414, #0e0e0e);
   background-size: 300% 300%;
-  animation: gradient 9s alternate infinite;
+  animation: gradient 8s alternate infinite;
   position: absolute;
   top: 0;
   left: 0;

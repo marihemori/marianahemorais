@@ -24,7 +24,7 @@ export default function Hero() {
       <div className="flex flex-col items-center xl:flex-row gap-6 sm:gap-12">
         <div className="w-fill xl:w-2/3">
           <motion.h1>
-            <p className="text-4xl sm:text-5xl mb-6 font-medium leading-[3rem] sm:leading-[3.5rem]">
+            <p className="text-4xl sm:text-5xl mb-6 font-medium leading-[3rem] sm:leading-[3.5rem] text-white">
               Hi 👋 <br></br>
               I'am Mariana and I'm a{" "}
               <span className="font-bold">
@@ -32,7 +32,7 @@ export default function Hero() {
               </span>{" "}
               based in Brazil.
             </p>
-            <p className="text-2xl text-black">
+            <p className="text-2xl text-white">
               Feel free to contact me or follow me on social media.
             </p>
           </motion.h1>
@@ -50,12 +50,8 @@ export default function Hero() {
             }}
           >
             <Link
-              href="#contact"
+              href="mailto:marianahemorais@gmail.com"
               className="cursor-pointer"
-              onClick={() => {
-                setActiveSection("Contact");
-                setTimeOfLastClick(Date.now());
-              }}
             >
               Contact me ✉️
             </Link>

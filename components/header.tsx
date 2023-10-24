@@ -13,13 +13,13 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mb-[2rem] z-50 flex items-center justify-between mt-6">
+    <header className="mb-[2rem] z-50 flex justify-between mt-6">
       <div>
-        <h1 className="text-zinc-800 text-3xl font-semibold">
+        <h1 className="text-white text-3xl font-semibold">
           <Link href="/">Mariana.</Link>
         </h1>
       </div>
-      <div className="bg-white text-black rounded-full">
+      <div className="bg-white text-black rounded-[0.5rem]">
         <Dropdown className="bg-white text-black">
           <DropdownTrigger>
             <Button
@@ -30,22 +30,22 @@ export default function Header() {
             </Button>
           </DropdownTrigger>
           <DropdownMenu aria-label="Static Actions" className="rounded-full">
+            <DropdownItem key="download">
+              <a
+                className="flex items-center gap-2 text-xl px-5 py-1 "
+                href="/pdf/Mariana Morais - Currículo.pdf"
+                download
+              >
+                Download PT-BR <HiDownload />
+              </a>
+            </DropdownItem>
             <DropdownItem key="new" className="rounded-full">
               <a
-                href="/pdf/resume.pdf"
+                href="/pdf/Mariana Morais - Resume.pdf"
                 download
                 className="flex items-center gap-2 text-xl px-5 py-1 rounded-full"
               >
                 Download EN-US <HiDownload />
-              </a>
-            </DropdownItem>
-            <DropdownItem key="download">
-              <a
-                className="flex items-center gap-2 text-xl px-5 py-1 "
-                href="/pdf/curriculo.pdf"
-                download
-              >
-                Download PT-BR <HiDownload />
               </a>
             </DropdownItem>
           </DropdownMenu>

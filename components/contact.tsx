@@ -29,8 +29,8 @@ export default function contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className="mb-10 text-2xl">
-        Please contact me directly at{" "}
+      <p className="mb-10 text-2xl text-white">
+        If you want you can contact me at{" "}
         <a className="underline" href="maito:marianahemorais@gmail.com">
           marianahemorais@gmail.com
         </a>{" "}
@@ -43,7 +43,7 @@ export default function contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg border border-black/10 "
+          className="h-14 px-4 rounded-lg border border-black/10 text-black"
           type="email"
           placeholder="Your e-mail"
           required
@@ -51,7 +51,7 @@ export default function contact() {
           name="email"
         />
         <textarea
-          className="h-52 my-3 rounded-lg border border-black/10 p-4"
+          className="h-52 my-3 rounded-lg border border-black/10 p-4 text-black"
           placeholder="Your message"
           required
           maxLength={3000}
@@ -59,7 +59,7 @@ export default function contact() {
         />
         <button
           type="submit"
-          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+          className="group flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-white text-black rounded-full outline-none transition-all focus:scale-110 hover:scale-110 active:scale-105"
         >
           Submit{" "}
           <FaPaperPlane className="transition-all group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}

@@ -12,7 +12,8 @@ export default function Projects() {
   return (
     <section ref={ref} id="projects" className="mb-28 mt-8">
       <SectionHeading>My projects</SectionHeading>
-      <div>
+      <p className="mb-10 text-2xl text-white">Some personal projects I did.</p>
+      <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 items-center">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} />

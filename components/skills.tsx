@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <motion.section ref={ref} className="scroll-mt-28 mt-8" id="skills">
       <SectionHeading>My skills</SectionHeading>
-      <p className="mb-10 text-2xl">
+      <p className="mb-10 text-2xl text-white">
         My skills that I got from working with them or studying.
       </p>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
