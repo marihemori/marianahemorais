@@ -13,7 +13,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="mb-[2rem] z-50 flex justify-between mt-6">
+    <header className="mb-[2rem] z-50 flex justify-between mt-2">
       <div>
         <h1 className="text-white text-3xl font-semibold">
           <Link href="/">Mariana.</Link>

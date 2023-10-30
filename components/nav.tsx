@@ -32,7 +32,7 @@ export default function Nav() {
             backdrop-blur-[0.5rem]
             sm:w-[3rem]
             sm:h-[23rem]
-            sm:top-[18rem]
+            sm:top-[11rem]
         "
         initial={{ y: -100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
